@@ -6,7 +6,6 @@ import {
   FaGooglePlusSquare,
   FaPinterestSquare,
 } from "react-icons/fa";
-import { icons } from "react-icons/lib";
 
 const Icons = () => {
   const icon = [
