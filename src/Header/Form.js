@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import ExistingUser from "./ExistingUser";
 import FormDesc from "./FormDesc";
 import NewUser from "./NewUser";
@@ -7,13 +7,13 @@ import { FormText } from "./constant";
 const Form = () => {
   const [IsLoggedin, setIsLoggedin] = useState(true);
 
-  const onClick1 = () => {
+  const onClick1 = useCallback(() => {
     setIsLoggedin(false);
-  };
+  }, []);
 
-  const onClick2 = () => {
+  const onClick2 = useCallback(() => {
     setIsLoggedin(true);
-  };
+  }, []);
 
   return (
     <div className="formTxt">
