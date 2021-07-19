@@ -1,29 +1,31 @@
 import React from "react";
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaTwitterSquare } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { FaGooglePlusSquare } from "react-icons/fa";
-import { FaPinterestSquare } from "react-icons/fa";
+import {
+  FaFacebookSquare,
+  FaTwitterSquare,
+  FaYoutube,
+  FaGooglePlusSquare,
+  FaPinterestSquare,
+} from "react-icons/fa";
+import { icons } from "react-icons/lib";
 
-const Icons = () => (
-  <div className="footerLogo">
-    <div className="fab">
-      <FaFacebookSquare />
+const Icons = () => {
+  const icon = [
+    <FaFacebookSquare />,
+    <FaTwitterSquare />,
+    <FaYoutube />,
+    <FaGooglePlusSquare />,
+    <FaPinterestSquare />,
+  ];
+  return (
+    <div className="footerLogo">
+      {icon.map((x, index) => (
+        <div className="fab" key={index}>
+          {x}
+        </div>
+      ))}
+      <hr className="hr" />
     </div>
-    <div className="fab">
-      <FaTwitterSquare />
-    </div>
-    <div className="fab">
-      <FaYoutube />
-    </div>
-    <div className="fab">
-      <FaGooglePlusSquare />
-    </div>
-    <div className="fab">
-      <FaPinterestSquare />
-    </div>
-    <hr className="hr" />
-  </div>
-);
+  );
+};
 
 export default Icons;
