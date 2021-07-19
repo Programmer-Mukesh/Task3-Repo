@@ -1,5 +1,5 @@
 import React from "react";
-import Input from "./Input";
+import InputComponent from "./Input";
 import Select from "./Select";
 
 const NewUser = () => {
@@ -10,7 +10,11 @@ const NewUser = () => {
 
   return (
     <div>
-      <Input classN={assignClass} type="text" placeholder={insideText} />
+      <InputComponent
+        addClass={assignClass}
+        type="text"
+        placeholder={insideText}
+      />
       <div className="toggle">
         <p className="formContent">{TextP}</p>
         <input className="items" type="text" placeholder="Employee Id " />
