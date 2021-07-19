@@ -7,3 +7,17 @@ export const Para5 =
 export const Para6 = "opt out";
 export const Para7 =
   "Care.com may contact you for administrative purposes whether or not you opt out of any of these email preferences .";
+
+export const FormText = [
+  "Are you new to Care.com?",
+  "Yes",
+  "No",
+  "Enter your existing Care.com login information.",
+];
+
+export const LeftSideText = [
+  "Enroll",
+  "The right care could",
+  "be right around the",
+  "corner!",
+];
