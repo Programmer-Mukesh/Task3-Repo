@@ -21,3 +21,12 @@ export const LeftSideText = [
   "be right around the",
   "corner!",
 ];
+export const insideText1 = ["Employee ID ", "First Name", "Last Name"];
+export const insideText2 = ["Address ", "Zip"];
+export const assignClass1 = "items hiddenForm";
+export const assignClass2 = "items";
+export const insideText = ["Email () ", "Password"];
+export const valueDob = ["Birth Month", "Day", "Year"];
+export const P1 = "Contact us | Change country";
+export const TextP = "Complete these fields to achieve your benefits.";
+export const assignClass = "items";
