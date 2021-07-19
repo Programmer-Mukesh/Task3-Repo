@@ -1,5 +1,5 @@
 import React from "react";
-import Input from "./Input";
+import InputComponent from "./Input";
 import Select from "./Select";
 
 const ExistingUser = () => {
@@ -12,14 +12,26 @@ const ExistingUser = () => {
 
   return (
     <div className="hidden hiddenForm">
-      <Input classN={assignClass1} type="text" placeholder={insideText1} />
+      <InputComponent
+        addClass={assignClass1}
+        type="text"
+        placeholder={insideText1}
+      />
       <div>
         <select className="items hiddenForm" name="Role">
           <option value="Role">Role</option>
         </select>
       </div>
-      <Input classN={assignClass2} type="text" placeholder={insideText2} />
-      <Input classN={assignClass2} type="text" placeholder={insideText} />
+      <InputComponent
+        addClass={assignClass2}
+        type="text"
+        placeholder={insideText2}
+      />
+      <InputComponent
+        addClass={assignClass2}
+        type="text"
+        placeholder={insideText}
+      />
       <Select values={valueDob} />
     </div>
   );
