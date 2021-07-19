@@ -2,11 +2,16 @@ import React from "react";
 import { P1, P2, P3 } from "./FooterConstant";
 
 const FooterDesc = () => {
-  const P = ["About us", "Terms of use", "For Business", "Privacy Policy"];
+  const footerLinks = [
+    "About us",
+    "Terms of use",
+    "For Business",
+    "Privacy Policy",
+  ];
   return (
     <div>
       <div className="aboutUs">
-        {P.map((x, index) => (
+        {footerLinks.map((x, index) => (
           <p className="bgColorText" key={index}>
             {x}
           </p>
